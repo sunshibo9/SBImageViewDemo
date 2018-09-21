@@ -15,6 +15,10 @@
 		FD79AFFD215361EF00D1BFB1 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = FD79AFFC215361EF00D1BFB1 /* main.m */; };
 		FD79B007215361EF00D1BFB1 /* SBImageViewDemoTests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD79B006215361EF00D1BFB1 /* SBImageViewDemoTests.m */; };
 		FD79B012215361EF00D1BFB1 /* SBImageViewDemoUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = FD79B011215361EF00D1BFB1 /* SBImageViewDemoUITests.m */; };
+		FD79B022215362F400D1BFB1 /* UIImageView+SBImageView.m in Sources */ = {isa = PBXBuildFile; fileRef = FD79B021215362F400D1BFB1 /* UIImageView+SBImageView.m */; };
+		FD79B0242153648A00D1BFB1 /* demo.jpeg in Resources */ = {isa = PBXBuildFile; fileRef = FD79B0232153648A00D1BFB1 /* demo.jpeg */; };
+		FD79B0292153BF2200D1BFB1 /* SBImageStoreManager.m in Sources */ = {isa = PBXBuildFile; fileRef = FD79B0282153BF2200D1BFB1 /* SBImageStoreManager.m */; };
+		FD79B02C2154B1B500D1BFB1 /* SBImageDownloader.m in Sources */ = {isa = PBXBuildFile; fileRef = FD79B02B2154B1B500D1BFB1 /* SBImageDownloader.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +55,13 @@
 		FD79B00D215361EF00D1BFB1 /* SBImageViewDemoUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SBImageViewDemoUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD79B011215361EF00D1BFB1 /* SBImageViewDemoUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBImageViewDemoUITests.m; sourceTree = "<group>"; };
 		FD79B013215361EF00D1BFB1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FD79B020215362F400D1BFB1 /* UIImageView+SBImageView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIImageView+SBImageView.h"; sourceTree = "<group>"; };
+		FD79B021215362F400D1BFB1 /* UIImageView+SBImageView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIImageView+SBImageView.m"; sourceTree = "<group>"; };
+		FD79B0232153648A00D1BFB1 /* demo.jpeg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = demo.jpeg; sourceTree = "<group>"; };
+		FD79B0272153BF2200D1BFB1 /* SBImageStoreManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBImageStoreManager.h; sourceTree = "<group>"; };
+		FD79B0282153BF2200D1BFB1 /* SBImageStoreManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBImageStoreManager.m; sourceTree = "<group>"; };
+		FD79B02A2154B1B500D1BFB1 /* SBImageDownloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SBImageDownloader.h; sourceTree = "<group>"; };
+		FD79B02B2154B1B500D1BFB1 /* SBImageDownloader.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SBImageDownloader.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +92,7 @@
 		FD79AFE1215361EB00D1BFB1 = {
 			isa = PBXGroup;
 			children = (
+				FD79B01F2153620100D1BFB1 /* SBImageView */,
 				FD79AFEC215361EB00D1BFB1 /* SBImageViewDemo */,
 				FD79B005215361EF00D1BFB1 /* SBImageViewDemoTests */,
 				FD79B010215361EF00D1BFB1 /* SBImageViewDemoUITests */,
@@ -106,6 +118,7 @@
 				FD79AFF0215361EB00D1BFB1 /* ViewController.h */,
 				FD79AFF1215361EB00D1BFB1 /* ViewController.m */,
 				FD79AFF3215361EB00D1BFB1 /* Main.storyboard */,
+				FD79B0232153648A00D1BFB1 /* demo.jpeg */,
 				FD79AFF6215361EF00D1BFB1 /* Assets.xcassets */,
 				FD79AFF8215361EF00D1BFB1 /* LaunchScreen.storyboard */,
 				FD79AFFB215361EF00D1BFB1 /* Info.plist */,
@@ -130,6 +143,19 @@
 				FD79B013215361EF00D1BFB1 /* Info.plist */,
 			);
 			path = SBImageViewDemoUITests;
+			sourceTree = "<group>";
+		};
+		FD79B01F2153620100D1BFB1 /* SBImageView */ = {
+			isa = PBXGroup;
+			children = (
+				FD79B020215362F400D1BFB1 /* UIImageView+SBImageView.h */,
+				FD79B021215362F400D1BFB1 /* UIImageView+SBImageView.m */,
+				FD79B0272153BF2200D1BFB1 /* SBImageStoreManager.h */,
+				FD79B0282153BF2200D1BFB1 /* SBImageStoreManager.m */,
+				FD79B02A2154B1B500D1BFB1 /* SBImageDownloader.h */,
+				FD79B02B2154B1B500D1BFB1 /* SBImageDownloader.m */,
+			);
+			path = SBImageView;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -238,6 +264,7 @@
 				FD79AFFA215361EF00D1BFB1 /* LaunchScreen.storyboard in Resources */,
 				FD79AFF7215361EF00D1BFB1 /* Assets.xcassets in Resources */,
 				FD79AFF5215361EB00D1BFB1 /* Main.storyboard in Resources */,
+				FD79B0242153648A00D1BFB1 /* demo.jpeg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -263,7 +290,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				FD79AFF2215361EB00D1BFB1 /* ViewController.m in Sources */,
+				FD79B02C2154B1B500D1BFB1 /* SBImageDownloader.m in Sources */,
 				FD79AFFD215361EF00D1BFB1 /* main.m in Sources */,
+				FD79B022215362F400D1BFB1 /* UIImageView+SBImageView.m in Sources */,
+				FD79B0292153BF2200D1BFB1 /* SBImageStoreManager.m in Sources */,
 				FD79AFEF215361EB00D1BFB1 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -7,7 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "SBImageDownloader.h"
 
 @interface UIImageView (SBImageView)
+@property NSString *tag;
+
+- (void)setImageWithURL:(NSString *)url placeholderImage:(NSString *)placeholder ;
 
 @end
